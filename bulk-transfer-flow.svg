@@ -1,0 +1,187 @@
+<svg width="680" viewBox="0 0 680 1080" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif;background:white">
+  <style>
+    .th { font-size:14px; font-weight:600; fill:#1a1a1a; }
+    .ts { font-size:12px; fill:#666; }
+    .th-gray   { fill:#2c2c2a; } .ts-gray   { fill:#5f5e5a; }
+    .th-blue   { fill:#042c53; } .ts-blue   { fill:#185fa5; }
+    .th-purple { fill:#26215c; } .ts-purple { fill:#534ab7; }
+    .th-teal   { fill:#085041; } .ts-teal   { fill:#0f6e56; }
+    .th-amber  { fill:#412402; } .ts-amber  { fill:#854f0b; }
+    .th-red    { fill:#501313; } .ts-red    { fill:#A32D2D; }
+    .box-gray   { fill:#f5f5f4; stroke:#c4c4c0; stroke-width:0.5; }
+    .box-blue   { fill:#e6f1fb; stroke:#185fa5; stroke-width:0.5; }
+    .box-purple { fill:#eeedfe; stroke:#534ab7; stroke-width:0.5; }
+    .box-teal   { fill:#e1f5ee; stroke:#0f6e56; stroke-width:0.5; }
+    .box-amber  { fill:#faeeda; stroke:#854f0b; stroke-width:0.5; }
+    .box-red    { fill:#FCEBEB; stroke:#A32D2D; stroke-width:0.5; }
+    .line       { stroke:#888; stroke-width:1.5; fill:none; }
+    .line-red   { stroke:#A32D2D; stroke-width:1.5; fill:none; }
+    .line-green { stroke:#0f6e56; stroke-width:1.5; fill:none; }
+    .dashed     { stroke:#ccc; stroke-width:0.8; fill:none; stroke-dasharray:4 3; }
+
+    .s0  { opacity:0; animation: fi 0.4s ease 0.1s forwards; }
+    .s1  { opacity:0; animation: fi 0.4s ease 0.4s forwards; }
+    .s2  { opacity:0; animation: fi 0.4s ease 0.7s forwards; }
+    .s3  { opacity:0; animation: fi 0.4s ease 1.0s forwards; }
+    .s4  { opacity:0; animation: fi 0.4s ease 1.4s forwards; }
+    .s5  { opacity:0; animation: fi 0.4s ease 1.8s forwards; }
+    .s6  { opacity:0; animation: fi 0.4s ease 2.2s forwards; }
+    .s7  { opacity:0; animation: fi 0.4s ease 2.6s forwards; }
+    .s8  { opacity:0; animation: fi 0.4s ease 3.0s forwards; }
+    .s9  { opacity:0; animation: fi 0.4s ease 3.4s forwards; }
+    .s10 { opacity:0; animation: fi 0.4s ease 3.8s forwards; }
+    .s11 { opacity:0; animation: fi 0.4s ease 4.2s forwards; }
+    .s12 { opacity:0; animation: fi 0.4s ease 4.6s forwards; }
+    .s13 { opacity:0; animation: fi 0.4s ease 5.0s forwards; }
+    .s14 { opacity:0; animation: fi 0.4s ease 5.4s forwards; }
+    .s15 { opacity:0; animation: fi 0.4s ease 5.8s forwards; }
+    .pulse { opacity:0; animation: fi 0.4s ease 1.0s forwards, pulse 1.5s ease 1.4s infinite; }
+    @keyframes fi { to { opacity:1; } }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#A32D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#0f6e56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- BEFORE -->
+  <text class="th s0" x="340" y="26" text-anchor="middle" style="font-size:15px;fill:#1a1a1a">Before — No Recipient Verification</text>
+
+  <g class="s0">
+    <rect class="box-gray" x="230" y="42" width="220" height="44" rx="8"/>
+    <text class="th th-gray" x="340" y="59" text-anchor="middle" dominant-baseline="central">Corporate Client</text>
+    <text class="ts ts-gray" x="340" y="76" text-anchor="middle" dominant-baseline="central">Submits Excel file with transfer list</text>
+  </g>
+
+  <line class="line s1" x1="340" y1="86" x2="340" y2="110" marker-end="url(#arrow)"/>
+
+  <g class="s1">
+    <rect class="box-blue" x="230" y="110" width="220" height="44" rx="8"/>
+    <text class="th th-blue" x="340" y="127" text-anchor="middle" dominant-baseline="central">Excel Upload</text>
+    <text class="ts ts-blue" x="340" y="144" text-anchor="middle" dominant-baseline="central">Teller uploads transfer data</text>
+  </g>
+
+  <line class="line s2" x1="340" y1="154" x2="340" y2="178" marker-end="url(#arrow)"/>
+
+  <g class="s2">
+    <rect class="box-blue" x="230" y="178" width="220" height="44" rx="8"/>
+    <text class="th th-blue" x="340" y="195" text-anchor="middle" dominant-baseline="central">Transfer Executed</text>
+    <text class="ts ts-blue" x="340" y="212" text-anchor="middle" dominant-baseline="central">No verification step</text>
+  </g>
+
+  <line class="line s3" x1="340" y1="222" x2="340" y2="246" marker-end="url(#arrow)"/>
+
+  <g class="pulse">
+    <rect class="box-red" x="215" y="246" width="250" height="44" rx="8"/>
+    <text class="th th-red" x="340" y="263" text-anchor="middle" dominant-baseline="central">⚠ Erroneous Transfer Risk</text>
+    <text class="ts ts-red" x="340" y="280" text-anchor="middle" dominant-baseline="central">Wrong recipient, undetectable</text>
+  </g>
+
+  <!-- Divider -->
+  <line class="dashed s4" x1="40" y1="315" x2="640" y2="315"/>
+  <text class="th s4" x="340" y="337" text-anchor="middle" style="font-size:15px;fill:#1a1a1a">After — Async Recipient Verification</text>
+
+  <!-- Corporate -->
+  <g class="s4">
+    <rect class="box-gray" x="230" y="353" width="220" height="44" rx="8"/>
+    <text class="th th-gray" x="340" y="370" text-anchor="middle" dominant-baseline="central">Corporate Client</text>
+    <text class="ts ts-gray" x="340" y="387" text-anchor="middle" dominant-baseline="central">Submits Excel file with transfer list</text>
+  </g>
+
+  <line class="line s5" x1="340" y1="397" x2="340" y2="421" marker-end="url(#arrow)"/>
+
+  <!-- Excel Upload -->
+  <g class="s5">
+    <rect class="box-blue" x="230" y="421" width="220" height="44" rx="8"/>
+    <text class="th th-blue" x="340" y="438" text-anchor="middle" dominant-baseline="central">Excel Upload</text>
+    <text class="ts ts-blue" x="340" y="455" text-anchor="middle" dominant-baseline="central">Teller uploads transfer data</text>
+  </g>
+
+  <line class="line s6" x1="340" y1="465" x2="340" y2="489" marker-end="url(#arrow)"/>
+
+  <!-- Async verification -->
+  <g class="s6">
+    <rect class="box-purple" x="185" y="489" width="310" height="56" rx="8"/>
+    <text class="th th-purple" x="340" y="509" text-anchor="middle" dominant-baseline="central">Async Recipient Verification</text>
+    <text class="ts ts-purple" x="340" y="526" text-anchor="middle" dominant-baseline="central">Parallel requests to KFTC per record</text>
+    <text class="ts ts-purple" x="340" y="540" text-anchor="middle" dominant-baseline="central">DB updated as responses arrive</text>
+  </g>
+
+  <!-- Three branch arrows -->
+  <line class="line-green s7" x1="250" y1="545" x2="116" y2="610" marker-end="url(#arr-green)"/>
+  <line class="line s7" x1="340" y1="545" x2="340" y2="610" marker-end="url(#arrow)"/>
+  <line class="line-red s7" x1="430" y1="545" x2="564" y2="610" marker-end="url(#arr-red)"/>
+
+  <!-- Branch labels -->
+  <text class="ts ts-teal s7" x="160" y="585" text-anchor="middle">✓ Name match</text>
+  <text class="ts ts-gray s7" x="340" y="585" text-anchor="middle">△ Name mismatch</text>
+  <text class="ts ts-red s7" x="516" y="585" text-anchor="middle">✗ Lookup failed</text>
+
+  <!-- Auto-approved -->
+  <g class="s8">
+    <rect class="box-teal" x="40" y="610" width="152" height="44" rx="8"/>
+    <text class="th th-teal" x="116" y="627" text-anchor="middle" dominant-baseline="central">Auto-approved</text>
+    <text class="ts ts-teal" x="116" y="644" text-anchor="middle" dominant-baseline="central">Transfer target confirmed</text>
+  </g>
+
+  <!-- Teller Manual Review -->
+  <g class="s9">
+    <rect class="box-amber" x="254" y="610" width="172" height="44" rx="8"/>
+    <text class="th th-amber" x="340" y="627" text-anchor="middle" dominant-baseline="central">Teller Manual Review</text>
+    <text class="ts ts-amber" x="340" y="644" text-anchor="middle" dominant-baseline="central">Teller confirms or rejects</text>
+  </g>
+
+  <!-- Excluded -->
+  <g class="s10">
+    <rect class="box-red" x="488" y="610" width="152" height="44" rx="8"/>
+    <text class="th th-red" x="564" y="627" text-anchor="middle" dominant-baseline="central">Excluded</text>
+    <text class="ts ts-red" x="564" y="644" text-anchor="middle" dominant-baseline="central">Not transferred</text>
+  </g>
+
+  <!-- Auto-approved → Transfer Targets -->
+  <path class="line-green s11" d="M116 654 L116 730 L230 730" marker-end="url(#arr-green)" fill="none"/>
+
+  <!-- Teller confirmed → Transfer Targets -->
+  <line class="line-green s11" x1="340" y1="654" x2="340" y2="730" marker-end="url(#arr-green)"/>
+  <text class="ts ts-teal s11" x="360" y="696" dominant-baseline="central">Confirmed</text>
+
+  <!-- Teller rejected → Excluded -->
+  <path class="line-red s11" d="M426 654 L480 654 L480 627 L488 627" marker-end="url(#arr-red)" fill="none"/>
+  <text class="ts ts-red s11" x="448" y="672" dominant-baseline="central">Rejected</text>
+
+  <!-- Transfer Targets Confirmed -->
+  <g class="s12">
+    <rect class="box-teal" x="230" y="730" width="220" height="44" rx="8"/>
+    <text class="th th-teal" x="340" y="747" text-anchor="middle" dominant-baseline="central">Transfer Targets Confirmed</text>
+    <text class="ts ts-teal" x="340" y="764" text-anchor="middle" dominant-baseline="central">Auto-approved + teller-confirmed</text>
+  </g>
+
+  <line class="line-green s13" x1="340" y1="774" x2="340" y2="798" marker-end="url(#arr-green)"/>
+
+  <!-- Bulk Transfer -->
+  <g class="s13">
+    <rect class="box-teal" x="230" y="798" width="220" height="44" rx="8"/>
+    <text class="th th-teal" x="340" y="815" text-anchor="middle" dominant-baseline="central">Bulk Transfer Executed</text>
+    <text class="ts ts-teal" x="340" y="832" text-anchor="middle" dominant-baseline="central">Only verified records processed</text>
+  </g>
+
+  <line class="line-green s14" x1="340" y1="842" x2="340" y2="866" marker-end="url(#arr-green)"/>
+
+  <!-- Success -->
+  <g class="s14">
+    <rect class="box-teal" x="215" y="866" width="250" height="44" rx="8"/>
+    <text class="th th-teal" x="340" y="883" text-anchor="middle" dominant-baseline="central">✅ Zero Erroneous Transfers</text>
+    <text class="ts ts-teal" x="340" y="900" text-anchor="middle" dominant-baseline="central">Safe, auditable bulk transfer</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text class="ts s15" x="340" y="950" text-anchor="middle" style="fill:#aaa">KFTC = Korea Financial Telecommunications &amp; Clearings Institute</text>
+</svg>
