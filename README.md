@@ -7,6 +7,12 @@ This project involved designing and implementing a bulk interbank transfer funct
 
 ---
 
+## Transfer Flow
+
+<img src="./bulk-transfer-flow.svg" alt="Bulk Transfer Flow — Before &amp; After"/>
+
+---
+
 ## Problem
 
 The existing workflow allowed tellers to upload large batches of transfer requests from Excel files without verifying recipient accounts. This created a significant risk of misdirected transfers caused by minor data-entry errors — a critical concern in high-stakes financial infrastructure.
@@ -21,17 +27,21 @@ Two competing challenges had to be solved simultaneously:
 ## Approach
 
 ### 1. Recipient Verification
+
 Integrated a recipient-verification API into the transfer workflow so that each recipient account was validated before any transfer could proceed. Transfers were blocked until verification was confirmed, eliminating the risk of misdirected payments.
 
 ### 2. Asynchronous Processing
+
 The external verification service supported only sequential processing, meaning large batches could leave tellers waiting while the terminal appeared frozen and unresponsive.
 
 To address this, I designed an asynchronous workflow that:
+
 - Processed verification responses as they arrived rather than waiting for the full batch
 - Displayed real-time progress indicators so tellers could monitor the process without interrupting their work
 - Allowed tellers to continue other tasks while verification ran in the background
 
 ### 3. Recipient Name Matching and Exception Handling
+
 Added recipient-name matching logic to catch mismatches between account numbers and registered names. Mismatches triggered an explicit review state requiring deliberate teller confirmation before the transfer could proceed.
 
 This ensured that exceptions were never silently passed through — every anomaly required a conscious human decision.
